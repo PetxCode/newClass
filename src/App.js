@@ -1,5 +1,7 @@
 import CenterCard from "./CenterCard";
 import "antd/dist/antd.css";
+import Random from "./Random";
+import NewHome from "./NewHome";
 
 function App() {
   return (
@@ -23,7 +25,10 @@ function App() {
       >
         This is Home
       </div>
-      <CenterCard />
+      <Random />
+      <br />
+      <br />
+      <NewHome />
     </div>
   );
 }

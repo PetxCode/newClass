@@ -1,36 +1,21 @@
-import CenterCard from "./CenterCard";
+import React from "react";
+import MakePayment from "./Payment/MakePayment";
 import "antd/dist/antd.css";
-import Random from "./Random";
-import NewHome from "./NewHome";
+import ViewPayment from "./Payment/ViewPayment";
 
-function App() {
+const App = () => {
   return (
     <div
       style={{
-        width: "100vw",
-        height: "100vh",
         display: "flex",
+        flexWrap: "wrap",
         justifyContent: "center",
-        flexDirection: "column",
-        alignItems: "center",
-        // backgroundColor: "lightblue",
+        marginTop: "50px",
       }}
     >
-      <div
-        style={{
-          marginBottom: "20px",
-          fontWeight: "bold",
-          fontSize: "20px",
-        }}
-      >
-        This is Home
-      </div>
-      <Random />
-      <br />
-      <br />
-      <NewHome />
+      <MakePayment />
     </div>
   );
-}
+};
 
 export default App;

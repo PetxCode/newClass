@@ -28,7 +28,7 @@ const myColor = ["lightblue", "pink", "orange", "green", "blue"];
 
 const CenterCard = () => {
   const bgClr = useRef();
-
+  const dispatch = useDispatch();
   const items = useSelector((state) => state.AllItems.item);
   console.log(items[2]);
   const { id, name, title } = items[1];
@@ -41,6 +41,7 @@ const CenterCard = () => {
       .catch((err) => console.log("err", err));
 
     console.log(res.data);
+    dispatch(res.data);
   };
 
   // const randNumb = Math.floor(Math.random() * myStatement.length);
